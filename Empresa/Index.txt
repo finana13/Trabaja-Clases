@@ -1,0 +1,10 @@
+port { Producto } from "./Productos";
+
+const productos: Producto[] = [new Producto(1, "Producto A", "Tipo A", 8000, "País A", 10),  new Producto(2, "Producto B", "Tipo B", 3000, "País B", 20),  new Producto(3, "Producto C", "Tipo C", 5000, "País C", 15),
+];
+
+const cantidadTotal = Producto.contarCantidadProductos(productos);
+const sumaValoresPrecios = Producto.sumarValoresPrecios(productos);
+
+console.log("Cantidad total de productos ingresados:", cantidadTotal);
+console.log("Suma de los valores de los precios de los productos:", sumaValoresPrecios);
